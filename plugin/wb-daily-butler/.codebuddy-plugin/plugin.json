@@ -1,0 +1,43 @@
+{
+  "name": "wb-daily-butler",
+  "version": "1.1.0",
+  "description": "Hosts WorkBuddy daily check-in and Buddy Cat travel in the cloud so it keeps running with the PC off: guides non-technical users from picking an environment to one QR scan, then schedules everything automatically.",
+  "author": {
+    "name": "ai应用研究社"
+  },
+  "agents": ["./agents/wb-daily-butler.md"],
+  "skills": ["./skills/wb-checkin-kit"],
+
+  "expertType": "agent",
+  "agentName": "wb-daily-butler",
+
+  "displayName": {
+    "en": "Cloud Check-in Butler",
+    "zh": "云签到托管管家"
+  },
+  "profession": {
+    "en": "Cloud Check-in Automation Expert",
+    "zh": "WorkBuddy 云签到托管专家"
+  },
+  "displayDescription": {
+    "en": "Hosts WorkBuddy check-in and Buddy Cat travel in the cloud so it runs with your PC off. Scan once, then credits and cat trips happen every day on their own.",
+    "zh": "不用一直开着电脑，帮你把 WorkBuddy 的每日签到和派猫托管到云端，只需扫码一次，之后每天自动领积分、自动把猫派出去。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "我想让签到全自动，但不想电脑一直开着",
+    "en": "I want check-in to run itself, but I don't want my PC on all day"
+  },
+  "plugin": "wb-daily-butler",
+  "tags": [
+    { "en": "Cloud Hosted Check-in", "zh": "云托管签到" },
+    { "en": "Auto Buddy Travel", "zh": "自动派猫" },
+    { "en": "Zero-Setup Guidance", "zh": "零基础部署" }
+  ],
+  "quickPrompts": [
+    { "en": "I want check-in to run itself, but I don't want my PC on all day", "zh": "我想让签到全自动，但不想电脑一直开着" },
+    { "en": "Walk me through hosting it on a free box cloud desktop", "zh": "帮我把签到挂到 box 云电脑上，一步步教我" },
+    { "en": "I already scanned the QR code — how do I confirm it really runs every day", "zh": "我已经扫码了，怎么确认它真的每天会自动跑" }
+  ]
+}
